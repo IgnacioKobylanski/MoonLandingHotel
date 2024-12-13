@@ -2,26 +2,26 @@ package com.moonlandinghotel.moon_landing_hotelweb.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.util.Set;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor // Constructor sin argumentos (necesario para JPA)
+@AllArgsConstructor // Constructor con todos los atributos
 public class Event {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private String name;
 
-    private String description;
-
-    private String text;
-
     private double price;
 
-    private int dateD;
-
-    private String dateM;
-
-    private String img;
+    // Constructor personalizado (sin ID, ya que lo genera automáticamente)
+    public Event(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
 }
