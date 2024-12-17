@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 
 @Data
 @Entity
-@NoArgsConstructor // Constructor sin argumentos (necesario para JPA)
+@NoArgsConstructor // Constructor sin argumentos (para JPA)
 @AllArgsConstructor // Constructor con todos los atributos
 public class User {
 
@@ -26,7 +26,7 @@ public class User {
 
     private boolean admin;
 
-    // Constructor personalizado (sin ID, ya que lo genera automáticamente)
+    // Constructor personalizado
     public User(String name, String email, String password) {
         this.name = name;
         this.email = email;
