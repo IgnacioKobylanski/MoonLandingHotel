@@ -19,7 +19,7 @@ public class Event {
 
     private double price;
 
-    // Constructor personalizado (sin ID, ya que lo genera automáticamente)
+    // Constructor personalizado
     public Event(String name, double price) {
         this.name = name;
         this.price = price;
