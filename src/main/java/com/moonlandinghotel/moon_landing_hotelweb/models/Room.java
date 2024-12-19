@@ -7,8 +7,8 @@ import lombok.AllArgsConstructor;
 
 @Data
 @Entity
-@NoArgsConstructor // Constructor sin argumentos (necesario para JPA)
-@AllArgsConstructor // Constructor con todos los atributos
+@NoArgsConstructor
+@AllArgsConstructor
 public class Room {
 
     @Id
@@ -17,11 +17,17 @@ public class Room {
 
     private String name;
 
-    private String price;
+    private double price;
 
-    // Constructor personalizado (sin ID, ya que lo genera automáticamente)
-    public Room(String name, String price) {
+    private String description;
+
+    private String imageUrl;
+
+
+    public Room(String name, double price, String description, String imageUrl) {
         this.name = name;
         this.price = price;
+        this.description = description;
+        this.imageUrl = imageUrl;
     }
 }

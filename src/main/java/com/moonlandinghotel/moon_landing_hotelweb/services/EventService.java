@@ -38,10 +38,10 @@ public class EventService {
         return event;
     }
 
-    // Crear o actualizar evento
     public Event saveEvent(Event event) {
         logger.info("Saving event: {}", event.getName());
 
+        // Validación de los campos
         if (event.getName() == null || event.getName().isEmpty()) {
             logger.error("Event name can't be null or empty");
             throw new IllegalArgumentException("Event name can't be null or empty");
@@ -52,10 +52,33 @@ public class EventService {
             throw new IllegalArgumentException("Price can't be negative");
         }
 
+        // Nueva validación de campos adicionales
+        if (event.getDescription() == null || event.getDescription().isEmpty()) {
+            logger.error("Event description can't be null or empty");
+            throw new IllegalArgumentException("Event description can't be null or empty");
+        }
+
+        if (event.getText() == null || event.getText().isEmpty()) {
+            logger.error("Event text can't be null or empty");
+            throw new IllegalArgumentException("Event text can't be null or empty");
+        }
+
+        if (event.getDateM() == null || event.getDateM().isEmpty()) {
+            logger.error("Event month can't be null or empty");
+            throw new IllegalArgumentException("Event month can't be null or empty");
+        }
+
+        if (event.getImg() == null || event.getImg().isEmpty()) {
+            logger.error("Event image URL can't be null or empty");
+            throw new IllegalArgumentException("Event image URL can't be null or empty");
+        }
+
+        // Guardar el evento
         Event savedEvent = eventRepository.save(event);
         logger.info("Event saved with ID: {}", savedEvent.getId());
         return savedEvent;
     }
+
 
     // Eliminar evento por ID
     public void deleteEventById(Long id) {

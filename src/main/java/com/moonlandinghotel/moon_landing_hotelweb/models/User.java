@@ -26,6 +26,14 @@ public class User {
 
     private boolean admin;
 
+    public User(String email, String password, String name, String lastname, boolean admin) {
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.lastname = lastname;
+        this.admin = admin;
+    }
+
     // Constructor personalizado
     public User(String name, String email, String password) {
         this.name = name;

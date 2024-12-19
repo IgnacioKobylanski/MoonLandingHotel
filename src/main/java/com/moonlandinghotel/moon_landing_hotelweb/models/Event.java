@@ -7,8 +7,8 @@ import lombok.AllArgsConstructor;
 
 @Data
 @Entity
-@NoArgsConstructor // Constructor sin argumentos (necesario para JPA)
-@AllArgsConstructor // Constructor con todos los atributos
+@NoArgsConstructor
+@AllArgsConstructor
 public class Event {
 
     @Id
@@ -16,12 +16,21 @@ public class Event {
     private Long id;
 
     private String name;
-
+    private String description;
+    private String text;
     private double price;
+    private int dateD;
+    private String dateM;
+    private String img;
 
-    // Constructor personalizado
-    public Event(String name, double price) {
+
+    public Event(String name, String description, String text, double price, int dateD, String dateM, String img) {
         this.name = name;
+        this.description = description;
+        this.text = text;
         this.price = price;
+        this.dateD = dateD;
+        this.dateM = dateM;
+        this.img = img;
     }
 }

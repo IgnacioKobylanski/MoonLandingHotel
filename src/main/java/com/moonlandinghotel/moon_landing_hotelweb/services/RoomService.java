@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import static java.lang.Double.parseDouble;
 
 @Service
 public class RoomService {
@@ -51,9 +50,21 @@ public class RoomService {
             logger.error("Room name can't be null or empty");
             throw new IllegalArgumentException("Room name can't be null or empty");
         }
-        if (parseDouble(room.getPrice()) < 0) {
+
+        if (room.getPrice() < 0) {  // Asegurando que el precio sea un número positivo
             logger.error("Price can't be negative");
             throw new IllegalArgumentException("Price can't be negative");
+        }
+
+        // Verificando que la descripción y la URL de la imagen no estén vacías
+        if (room.getDescription() == null || room.getDescription().isEmpty()) {
+            logger.error("Room description can't be null or empty");
+            throw new IllegalArgumentException("Room description can't be null or empty");
+        }
+
+        if (room.getImageUrl() == null || room.getImageUrl().isEmpty()) {
+            logger.error("Room image URL can't be null or empty");
+            throw new IllegalArgumentException("Room image URL can't be null or empty");
         }
 
         Room savedRoom = roomRepository.save(room);
