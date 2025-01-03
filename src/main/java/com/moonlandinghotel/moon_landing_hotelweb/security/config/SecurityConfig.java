@@ -1,33 +1,34 @@
 package com.moonlandinghotel.moon_landing_hotelweb.security.config;
 
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-
-import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+                .csrf(csrf -> csrf
+                        .ignoringRequestMatchers("/api/**"))  // Desactiva CSRF para las rutas de la API
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
-                                .requestMatchers("/", "/public/**", "/login").permitAll()
-                                .requestMatchers("/admin/**").authenticated()
-                                .anyRequest().permitAll()
+                                .requestMatchers("/", "/public/**", "/login").permitAll()  // Rutas públicas permitidas
+                                .requestMatchers("/api/**").permitAll()  // Permitir acceso sin autenticación a la API
+                                .anyRequest().authenticated()  // Todas las demás rutas requieren autenticación
                 )
-                .formLogin(withDefaults());
+                .formLogin(Customizer.withDefaults());  // Usa el formulario de login predeterminado de Spring Security
 
         return http.build();
     }
+
+
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder();  // BCrypt para codificar las contraseñas de los usuarios
     }
 }

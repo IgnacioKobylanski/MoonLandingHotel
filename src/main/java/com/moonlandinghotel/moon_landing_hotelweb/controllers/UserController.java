@@ -34,6 +34,17 @@ public class UserController {
         }
     }
 
+    // POST /api/users/login - Validar credenciales de usuario
+    @PostMapping("/login")
+    public ResponseEntity<User> login(@RequestBody User loginRequest) {
+        Optional<User> user = userService.validateLogin(loginRequest.getEmail(), loginRequest.getPassword());
+        if (user.isPresent()) {
+            return ResponseEntity.ok(user.get()); // Devuelve 200 OK si las credenciales son correctas
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build(); // Devuelve 401 si las credenciales son incorrectas
+        }
+    }
+
     // POST /api/users - Crear un nuevo usuario
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {

@@ -77,4 +77,22 @@ public class UserService {
         userRepository.deleteById(id);
         logger.info("User with ID {} deleted", id);
     }
+
+    // Validar login por email y password
+    public Optional<User> validateLogin(String email, String password) {
+        logger.info("Validating login for email: {}", email);
+
+        if (email == null || email.isEmpty()) {
+            logger.error("Email can't be null or empty");
+            throw new IllegalArgumentException("Email can't be null or empty");
+        }
+        if (password == null || password.isEmpty()) {
+            logger.error("Password can't be null or empty");
+            throw new IllegalArgumentException("Password can't be null or empty");
+        }
+
+        // Busca al usuario por email y contraseña
+        return userRepository.findByEmailAndPassword(email, password);
+    }
+
 }
