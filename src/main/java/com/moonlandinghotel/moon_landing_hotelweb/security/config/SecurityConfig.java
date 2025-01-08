@@ -29,6 +29,6 @@ public class SecurityConfig {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();  // BCrypt para codificar las contraseñas de los usuarios
+        return new BCryptPasswordEncoder();  // BCrypt para codificar las contraseñas de los usuarios(revisar mas tarde si es lo optimo)
     }
 }
