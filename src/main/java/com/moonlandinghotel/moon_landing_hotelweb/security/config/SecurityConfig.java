@@ -21,7 +21,7 @@ public class SecurityConfig {
                                 .requestMatchers("/api/**").permitAll()  // Permitir acceso sin autenticación a la API
                                 .anyRequest().authenticated()  // Todas las demás rutas requieren autenticación
                 )
-                .formLogin(Customizer.withDefaults());  // Usa el formulario de login predeterminado de Spring Security
+                .formLogin(Customizer.withDefaults());  // Formulario de login predeterminado de Spring Security
 
         return http.build();
     }
