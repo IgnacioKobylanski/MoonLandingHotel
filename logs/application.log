@@ -1,255 +1,81 @@
-2025-01-02T16:41:02.443-03:00  INFO 12872 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 12872 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
-2025-01-02T16:41:02.449-03:00 DEBUG 12872 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-01-02T16:41:02.450-03:00  INFO 12872 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-01-02T16:41:02.488-03:00  INFO 12872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-02T16:41:02.489-03:00  INFO 12872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-02T16:41:03.037-03:00  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-02T16:41:03.086-03:00  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
-2025-01-02T16:41:03.657-03:00  INFO 12872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-02T16:41:03.670-03:00  INFO 12872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-02T16:41:03.670-03:00  INFO 12872 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-01-02T16:41:03.721-03:00  INFO 12872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-02T16:41:03.722-03:00  INFO 12872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1232 ms
-2025-01-02T16:41:03.863-03:00  INFO 12872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-02T16:41:03.947-03:00  INFO 12872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-01-02T16:41:03.989-03:00  INFO 12872 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-02T16:41:04.268-03:00  INFO 12872 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-02T16:41:04.295-03:00  INFO 12872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-02T16:41:04.704-03:00  INFO 12872 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5facadd6
-2025-01-02T16:41:04.707-03:00  INFO 12872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-02T16:41:05.608-03:00  INFO 12872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-02T16:41:05.652-03:00  INFO 12872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-02T16:41:05.928-03:00  INFO 12872 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
-2025-01-02T16:41:06.057-03:00  INFO 12872 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
-2025-01-02T16:41:06.058-03:00  INFO 12872 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:41:06.067-03:00  INFO 12872 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:41:06.067-03:00  INFO 12872 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:41:06.075-03:00  INFO 12872 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:41:06.106-03:00  WARN 12872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-02T16:41:06.129-03:00  WARN 12872 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-01-13T17:32:17.606-03:00  INFO 18000 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 18000 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-13T17:32:17.611-03:00 DEBUG 18000 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-13T17:32:17.612-03:00  INFO 18000 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-13T17:32:17.651-03:00  INFO 18000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-13T17:32:17.651-03:00  INFO 18000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-13T17:32:18.317-03:00  INFO 18000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-13T17:32:18.367-03:00  INFO 18000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-01-13T17:32:19.003-03:00  INFO 18000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-13T17:32:19.017-03:00  INFO 18000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-13T17:32:19.018-03:00  INFO 18000 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-13T17:32:19.087-03:00  INFO 18000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-13T17:32:19.087-03:00  INFO 18000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2025-01-13T17:32:19.242-03:00  INFO 18000 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-13T17:32:19.327-03:00  INFO 18000 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-13T17:32:19.375-03:00  INFO 18000 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-13T17:32:19.837-03:00  INFO 18000 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-13T17:32:19.885-03:00  INFO 18000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-13T17:32:20.780-03:00  INFO 18000 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a649324
+2025-01-13T17:32:20.783-03:00  INFO 18000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-13T17:32:22.008-03:00  INFO 18000 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-13T17:32:22.055-03:00  INFO 18000 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-13T17:32:22.332-03:00  INFO 18000 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:22.476-03:00  INFO 18000 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:32:22.477-03:00  INFO 18000 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-13T17:32:22.482-03:00  INFO 18000 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-13T17:32:22.483-03:00  INFO 18000 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-13T17:32:22.490-03:00  INFO 18000 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-13T17:32:22.522-03:00  WARN 18000 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-13T17:32:22.546-03:00  WARN 18000 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 3d4efc41-9e17-4b1a-afe3-c993fe0ee6eb
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-01-02T16:41:06.198-03:00  INFO 12872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-01-02T16:41:06.346-03:00  INFO 12872 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46e11d8e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e37b317, org.springframework.security.web.context.SecurityContextHolderFilter@5e17ba84, org.springframework.security.web.header.HeaderWriterFilter@562cd3d1, org.springframework.web.filter.CorsFilter@1db53558, org.springframework.security.web.csrf.CsrfFilter@7bb40dec, org.springframework.security.web.authentication.logout.LogoutFilter@7638a4d7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50c1b4a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1266307d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27ed6200, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77fa876c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77cd5144, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@692e061e, org.springframework.security.web.access.ExceptionTranslationFilter@59a63a0e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6dd94e67]
-2025-01-02T16:41:06.509-03:00  INFO 12872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-02T16:41:06.547-03:00  INFO 12872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-01-02T16:41:06.553-03:00  INFO 12872 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 4.487 seconds (process running for 4.86)
-2025-01-02T16:41:10.197-03:00  INFO 12872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-02T16:41:10.197-03:00  INFO 12872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-02T16:41:10.197-03:00  INFO 12872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-01-02T16:41:10.208-03:00  WARN 12872 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/rooms' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-02T16:41:10.228-03:00  WARN 12872 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/rooms' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-02T16:52:59.378-03:00  INFO 15124 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 15124 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
-2025-01-02T16:52:59.379-03:00 DEBUG 15124 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-01-02T16:52:59.380-03:00  INFO 15124 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-01-02T16:52:59.415-03:00  INFO 15124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-02T16:52:59.415-03:00  INFO 15124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-02T16:52:59.930-03:00  INFO 15124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-02T16:52:59.977-03:00  INFO 15124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
-2025-01-02T16:53:00.455-03:00  INFO 15124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-02T16:53:00.464-03:00  INFO 15124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-02T16:53:00.464-03:00  INFO 15124 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-01-02T16:53:00.504-03:00  INFO 15124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-02T16:53:00.505-03:00  INFO 15124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1090 ms
-2025-01-02T16:53:00.620-03:00  INFO 15124 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-02T16:53:00.666-03:00  INFO 15124 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-01-02T16:53:00.694-03:00  INFO 15124 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-02T16:53:00.887-03:00  INFO 15124 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-02T16:53:00.907-03:00  INFO 15124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-02T16:53:01.144-03:00  INFO 15124 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12c89f23
-2025-01-02T16:53:01.146-03:00  INFO 15124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-02T16:53:01.865-03:00  INFO 15124 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-02T16:53:01.899-03:00  INFO 15124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-02T16:53:02.151-03:00  INFO 15124 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
-2025-01-02T16:53:02.257-03:00  INFO 15124 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
-2025-01-02T16:53:02.258-03:00  INFO 15124 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:53:02.263-03:00  INFO 15124 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:53:02.264-03:00  INFO 15124 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:53:02.267-03:00  INFO 15124 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:53:02.293-03:00  WARN 15124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-02T16:53:02.315-03:00  WARN 15124 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 0ce1bac9-07f8-4247-9815-3d647cc46ba4
+Using generated security password: 933a0d6c-61bb-425b-b302-e72376ae4b00
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-01-02T16:53:02.380-03:00  INFO 15124 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-01-02T16:53:02.525-03:00  INFO 15124 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39103099, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50c1b4a, org.springframework.security.web.context.SecurityContextHolderFilter@76e3be1c, org.springframework.security.web.header.HeaderWriterFilter@576f10ae, org.springframework.web.filter.CorsFilter@315d467a, org.springframework.security.web.csrf.CsrfFilter@6da0cb1f, org.springframework.security.web.authentication.logout.LogoutFilter@6deff303, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e5a7157, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77fa876c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@40cb10bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a1c395c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@562cd3d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78e764c5, org.springframework.security.web.access.ExceptionTranslationFilter@49cf2507, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16d8758d]
-2025-01-02T16:53:02.673-03:00  INFO 15124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-02T16:53:02.696-03:00  INFO 15124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-01-02T16:53:02.702-03:00  INFO 15124 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.665 seconds (process running for 3.995)
-2025-01-02T16:53:41.258-03:00  INFO 15124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-02T16:53:41.258-03:00  INFO 15124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-02T16:53:41.259-03:00  INFO 15124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-02T16:53:41.269-03:00  WARN 15124 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/events' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-02T16:53:41.280-03:00  WARN 15124 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/events' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-02T16:58:17.108-03:00  INFO 11676 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 11676 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
-2025-01-02T16:58:17.109-03:00 DEBUG 11676 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-01-02T16:58:17.110-03:00  INFO 11676 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-01-02T16:58:17.145-03:00  INFO 11676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-02T16:58:17.145-03:00  INFO 11676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-02T16:58:17.658-03:00  INFO 11676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-02T16:58:17.708-03:00  INFO 11676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
-2025-01-02T16:58:18.240-03:00  INFO 11676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-02T16:58:18.248-03:00  INFO 11676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-02T16:58:18.248-03:00  INFO 11676 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-01-02T16:58:18.289-03:00  INFO 11676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-02T16:58:18.290-03:00  INFO 11676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1143 ms
-2025-01-02T16:58:18.410-03:00  INFO 11676 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-02T16:58:18.457-03:00  INFO 11676 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-01-02T16:58:18.492-03:00  INFO 11676 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-02T16:58:18.730-03:00  INFO 11676 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-02T16:58:18.752-03:00  INFO 11676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-02T16:58:19.009-03:00  INFO 11676 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19b13f62
-2025-01-02T16:58:19.011-03:00  INFO 11676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-02T16:58:19.747-03:00  INFO 11676 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-02T16:58:19.781-03:00  INFO 11676 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-02T16:58:20.038-03:00  INFO 11676 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
-2025-01-02T16:58:20.146-03:00  INFO 11676 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
-2025-01-02T16:58:20.147-03:00  INFO 11676 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:58:20.152-03:00  INFO 11676 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:58:20.152-03:00  INFO 11676 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:58:20.156-03:00  INFO 11676 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:58:20.183-03:00  WARN 11676 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-02T16:58:20.205-03:00  WARN 11676 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: d519e562-71d0-4373-bec6-d83b09fd6050
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-01-02T16:58:20.268-03:00  INFO 11676 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-01-02T16:58:20.414-03:00  INFO 11676 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@780e5fd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16d8758d, org.springframework.security.web.context.SecurityContextHolderFilter@e47c7fd, org.springframework.security.web.header.HeaderWriterFilter@652a4377, org.springframework.web.filter.CorsFilter@76caf712, org.springframework.security.web.csrf.CsrfFilter@6c5f0d7f, org.springframework.security.web.authentication.logout.LogoutFilter@7398c35e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2590a0dd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3fdf6d36, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@52785b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76a447bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18538b77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aa80716, org.springframework.security.web.access.ExceptionTranslationFilter@6ec6b054, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fe85eed]
-2025-01-02T16:58:20.561-03:00  INFO 11676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-02T16:58:20.584-03:00  INFO 11676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-01-02T16:58:20.589-03:00  INFO 11676 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.827 seconds (process running for 4.175)
-2025-01-02T16:58:20.650-03:00  INFO 11676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-02T16:58:20.650-03:00  INFO 11676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-02T16:58:20.651-03:00  INFO 11676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-02T16:58:20.662-03:00  WARN 11676 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/events' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-02T16:58:20.682-03:00  WARN 11676 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/events' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-02T16:58:20.699-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:58:20.705-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:58:20.751-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:58:20.754-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:58:23.970-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:58:23.974-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:58:23.979-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:58:23.983-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:58:25.238-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T16:58:25.250-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T16:58:25.257-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T16:58:25.260-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T16:58:26.364-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:58:26.368-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:58:26.371-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.EventService              : Fetching all events
-2025-01-02T16:58:26.376-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.EventService              : Found 3 events
-2025-01-02T16:58:36.996-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-02T16:58:40.663-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Fetching user with ID: 4
-2025-01-02T16:58:40.667-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Found user: bustamante@mail.com
-2025-01-02T16:58:40.669-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.UserService               : Fetching user with ID: 4
-2025-01-02T16:58:40.672-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.UserService               : Found user: bustamante@mail.com
-2025-01-02T16:59:15.529-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:59:15.534-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:59:15.537-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T16:59:15.541-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T16:59:16.449-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T16:59:16.452-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T16:59:16.455-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T16:59:16.458-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T17:00:51.045-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.UserService               : Fetching user with ID: 4
-2025-01-02T17:00:51.049-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.UserService               : Found user: bustamante@mail.com
-2025-01-02T17:00:51.052-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Fetching user with ID: 4
-2025-01-02T17:00:51.055-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Found user: bustamante@mail.com
-2025-01-02T17:01:17.348-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Validating login for email: pedro@mail.com
-2025-01-02T17:01:18.562-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.UserService               : Fetching user with ID: 3
-2025-01-02T17:01:18.565-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.UserService               : Found user: pedro@mail.com
-2025-01-02T17:01:18.568-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Fetching user with ID: 3
-2025-01-02T17:01:18.570-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Found user: pedro@mail.com
-2025-01-02T17:01:21.457-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:01:21.463-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:01:21.467-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:01:21.472-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:01:22.973-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:01:22.977-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:01:22.980-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:01:22.984-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:01:23.716-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching room with ID: 2
-2025-01-02T17:01:23.719-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found room: Suite
-2025-01-02T17:01:23.721-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Fetching room with ID: 2
-2025-01-02T17:01:23.724-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Found room: Suite
-2025-01-02T17:01:24.757-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Fetching user with ID: 3
-2025-01-02T17:01:24.760-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Found user: pedro@mail.com
-2025-01-02T17:01:24.763-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Fetching user with ID: 3
-2025-01-02T17:01:24.766-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Found user: pedro@mail.com
-2025-01-02T17:05:22.880-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:05:22.884-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:05:22.888-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:05:22.891-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:05:25.024-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T17:05:25.027-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T17:05:25.030-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T17:05:25.033-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T17:05:55.314-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-02T17:05:57.243-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:05:57.248-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:05:57.251-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:05:57.255-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:05:58.235-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T17:05:58.238-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T17:05:58.240-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Fetching room with ID: 1
-2025-01-02T17:05:58.243-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Found room: Standard room
-2025-01-02T17:06:25.232-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:06:25.236-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:06:25.238-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:06:25.241-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:06:30.203-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:06:30.207-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:06:30.210-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:06:30.213-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:10:02.176-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:10:02.179-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:10:02.182-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:10:02.186-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:10:22.660-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:10:22.663-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:10:22.666-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:10:22.668-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:10:23.255-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:10:23.258-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:10:23.261-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:10:23.265-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:11:48.186-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:11:48.190-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:11:51.676-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:11:51.680-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:11:51.684-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:11:51.688-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:12:19.377-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:12:19.380-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:12:19.383-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:12:19.387-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:22:44.954-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.UserService               : Validating login for email: carlos@mail.com
-2025-01-02T17:22:53.313-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
-2025-01-02T17:22:55.855-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:22:55.859-03:00  INFO 11676 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:22:55.862-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:22:55.864-03:00  INFO 11676 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:22:56.948-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:22:56.950-03:00  INFO 11676 --- [http-nio-8080-exec-8] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:22:56.953-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Fetching all events
-2025-01-02T17:22:56.955-03:00  INFO 11676 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Found 3 events
-2025-01-02T17:22:57.350-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:22:57.354-03:00  INFO 11676 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:22:57.356-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:22:57.360-03:00  INFO 11676 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:22:58.124-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:22:58.127-03:00  INFO 11676 --- [http-nio-8080-exec-2] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:22:58.129-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-02T17:22:58.132-03:00  INFO 11676 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-02T17:22:59.172-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.UserService               : Fetching user with ID: 2
-2025-01-02T17:22:59.175-03:00  INFO 11676 --- [http-nio-8080-exec-4] c.m.m.services.UserService               : Found user: carlo@mail.com
-2025-01-02T17:22:59.178-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.UserService               : Fetching user with ID: 2
-2025-01-02T17:22:59.180-03:00  INFO 11676 --- [http-nio-8080-exec-7] c.m.m.services.UserService               : Found user: carlo@mail.com
+2025-01-13T17:32:22.621-03:00  INFO 18000 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-01-13T17:32:22.789-03:00  INFO 18000 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ad33829, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b2b7472, org.springframework.security.web.context.SecurityContextHolderFilter@262c8f85, org.springframework.security.web.header.HeaderWriterFilter@61609afa, org.springframework.web.filter.CorsFilter@7dabf1e9, org.springframework.security.web.csrf.CsrfFilter@34b7c424, org.springframework.security.web.authentication.logout.LogoutFilter@2fc11099, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e3c6f3b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2dbf434b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@418f2806, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3646334c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d7c2647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22fe426e, org.springframework.security.web.access.ExceptionTranslationFilter@6c58c5c6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2822f979]
+2025-01-13T17:32:22.972-03:00  INFO 18000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-13T17:32:23.032-03:00  INFO 18000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-01-13T17:32:23.038-03:00  INFO 18000 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 5.801 seconds (process running for 7.019)
+2025-01-13T17:32:34.093-03:00  INFO 18000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-13T17:32:34.093-03:00  INFO 18000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-13T17:32:34.094-03:00  INFO 18000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-13T17:32:34.108-03:00  WARN 18000 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/rooms' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-13T17:32:34.134-03:00  WARN 18000 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/rooms' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-13T17:32:34.151-03:00  INFO 18000 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:34.155-03:00  INFO 18000 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:32:34.200-03:00  INFO 18000 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:34.204-03:00  INFO 18000 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:32:35.185-03:00  INFO 18000 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching room with ID: 2
+2025-01-13T17:32:35.196-03:00  INFO 18000 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found room: Suite
+2025-01-13T17:32:35.204-03:00  INFO 18000 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching room with ID: 2
+2025-01-13T17:32:35.207-03:00  INFO 18000 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found room: Suite
+2025-01-13T17:32:48.438-03:00  INFO 18000 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:48.444-03:00  INFO 18000 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:32:48.448-03:00  INFO 18000 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:48.453-03:00  INFO 18000 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:32:55.130-03:00  INFO 18000 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:55.134-03:00  INFO 18000 --- [http-nio-8080-exec-7] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:32:55.138-03:00  INFO 18000 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:32:55.142-03:00  INFO 18000 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:33:04.822-03:00  INFO 18000 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Fetching all events
+2025-01-13T17:33:04.826-03:00  INFO 18000 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Found 3 events
+2025-01-13T17:33:04.831-03:00  INFO 18000 --- [http-nio-8080-exec-10] c.m.m.services.EventService              : Fetching all events
+2025-01-13T17:33:04.834-03:00  INFO 18000 --- [http-nio-8080-exec-10] c.m.m.services.EventService              : Found 3 events
+2025-01-13T17:33:06.152-03:00  INFO 18000 --- [http-nio-8080-exec-2] c.m.m.services.EventService              : Fetching event with ID: 1
+2025-01-13T17:33:06.156-03:00  INFO 18000 --- [http-nio-8080-exec-2] c.m.m.services.EventService              : Found event: Ted Talk
+2025-01-13T17:33:06.161-03:00  INFO 18000 --- [http-nio-8080-exec-1] c.m.m.services.EventService              : Fetching event with ID: 1
+2025-01-13T17:33:06.164-03:00  INFO 18000 --- [http-nio-8080-exec-1] c.m.m.services.EventService              : Found event: Ted Talk
+2025-01-13T17:33:19.227-03:00  INFO 18000 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-13T17:33:20.702-03:00  INFO 18000 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Fetching user with ID: 4
+2025-01-13T17:33:20.704-03:00  INFO 18000 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Found user: bustamante@mail.com
+2025-01-13T17:33:20.710-03:00  INFO 18000 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Fetching user with ID: 4
+2025-01-13T17:33:20.713-03:00  INFO 18000 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Found user: bustamante@mail.com
+2025-01-13T17:33:22.809-03:00  INFO 18000 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:33:22.812-03:00  INFO 18000 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:33:22.815-03:00  INFO 18000 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-13T17:33:22.819-03:00  INFO 18000 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-13T17:33:24.053-03:00  INFO 18000 --- [http-nio-8080-exec-5] c.m.m.services.EventService              : Fetching all events
+2025-01-13T17:33:24.057-03:00  INFO 18000 --- [http-nio-8080-exec-5] c.m.m.services.EventService              : Found 3 events
+2025-01-13T17:33:24.060-03:00  INFO 18000 --- [http-nio-8080-exec-6] c.m.m.services.EventService              : Fetching all events
+2025-01-13T17:33:24.063-03:00  INFO 18000 --- [http-nio-8080-exec-6] c.m.m.services.EventService              : Found 3 events
