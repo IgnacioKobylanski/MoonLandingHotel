@@ -25,4 +25,6 @@ public abstract class Reservation {
 
     private LocalDate reservationDate;
     private int quantity;
-    }
+    private String status;
+
+}
