@@ -1,149 +1,627 @@
-2025-01-14T18:59:27.032-03:00  INFO 3892 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 3892 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
-2025-01-14T18:59:27.037-03:00 DEBUG 3892 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-01-14T18:59:27.037-03:00  INFO 3892 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-01-14T18:59:27.079-03:00  INFO 3892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-14T18:59:27.079-03:00  INFO 3892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-14T18:59:27.644-03:00  INFO 3892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-14T18:59:27.703-03:00  INFO 3892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
-2025-01-14T18:59:28.264-03:00  INFO 3892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-14T18:59:28.277-03:00  INFO 3892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-14T18:59:28.277-03:00  INFO 3892 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-01-14T18:59:28.330-03:00  INFO 3892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-14T18:59:28.330-03:00  INFO 3892 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
-2025-01-14T18:59:28.472-03:00  INFO 3892 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-14T18:59:28.556-03:00  INFO 3892 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-01-14T18:59:28.598-03:00  INFO 3892 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-14T18:59:28.870-03:00  INFO 3892 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-14T18:59:28.896-03:00  INFO 3892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-14T18:59:29.320-03:00  INFO 3892 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f93d85
-2025-01-14T18:59:29.323-03:00  INFO 3892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-14T18:59:30.295-03:00  INFO 3892 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-14T18:59:30.363-03:00  INFO 3892 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-14T18:59:30.637-03:00  INFO 3892 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
-2025-01-14T18:59:30.756-03:00  INFO 3892 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
-2025-01-14T18:59:30.757-03:00  INFO 3892 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
-2025-01-14T18:59:30.762-03:00  INFO 3892 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
-2025-01-14T18:59:30.762-03:00  INFO 3892 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T18:59:30.766-03:00  INFO 3892 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T18:59:30.847-03:00  WARN 3892 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-14T18:59:30.870-03:00  WARN 3892 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-01-21T17:09:01.545-03:00  INFO 3888 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Starting MoonLandingHotelWebApplicationTests using Java 20.0.2 with PID 3888 (started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:09:01.551-03:00 DEBUG 3888 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:09:01.552-03:00  INFO 3888 --- [main] .m.m.MoonLandingHotelWebApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:09:02.239-03:00  INFO 3888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:09:02.314-03:00  INFO 3888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:09:02.848-03:00  INFO 3888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:09:02.943-03:00  INFO 3888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:09:02.992-03:00  INFO 3888 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:09:03.373-03:00  INFO 3888 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:09:03.417-03:00  INFO 3888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:09:03.763-03:00  INFO 3888 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14e3d439
+2025-01-21T17:09:03.765-03:00  INFO 3888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:09:04.948-03:00  INFO 3888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:09:05.033-03:00  INFO 3888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:09:05.409-03:00  INFO 3888 --- [main] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:09:05.574-03:00  INFO 3888 --- [main] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:09:05.574-03:00  INFO 3888 --- [main] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:09:05.581-03:00  INFO 3888 --- [main] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:09:05.581-03:00  INFO 3888 --- [main] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:09:05.586-03:00  INFO 3888 --- [main] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:09:05.675-03:00  WARN 3888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T17:09:05.709-03:00  WARN 3888 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 4d0e31b0-3dcb-4494-8cbf-abff44a70fe4
+Using generated security password: 87dd2595-8ef1-4bbe-8290-cf24ea4318a8
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-01-14T18:59:30.939-03:00  INFO 3892 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-01-14T18:59:31.089-03:00  INFO 3892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1630ef6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ce9f9f6, org.springframework.security.web.context.SecurityContextHolderFilter@5ae156c9, org.springframework.security.web.header.HeaderWriterFilter@6ee7d35a, org.springframework.web.filter.CorsFilter@41209074, org.springframework.security.web.csrf.CsrfFilter@2c616188, org.springframework.security.web.authentication.logout.LogoutFilter@429d33ab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39e2964b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3146b58b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1db7710a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3767985f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b9efda5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43ad8f4, org.springframework.security.web.access.ExceptionTranslationFilter@24be61e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@99e25a4]
-2025-01-14T18:59:31.239-03:00  INFO 3892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-14T18:59:31.270-03:00  INFO 3892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-01-14T18:59:31.276-03:00  INFO 3892 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 4.608 seconds (process running for 4.982)
-2025-01-14T18:59:50.167-03:00  INFO 3892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-14T18:59:50.168-03:00  INFO 3892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-14T18:59:50.168-03:00  INFO 3892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-01-14T18:59:50.178-03:00  WARN 3892 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-14T18:59:50.201-03:00  WARN 3892 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-14T18:59:55.880-03:00  INFO 3892 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T18:59:55.886-03:00  INFO 3892 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T18:59:55.920-03:00  INFO 3892 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T18:59:55.924-03:00  INFO 3892 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:00:19.335-03:00  INFO 3892 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:00:19.341-03:00  INFO 3892 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:00:19.345-03:00  INFO 3892 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:00:19.349-03:00  INFO 3892 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:02:31.149-03:00  INFO 3892 --- [http-nio-8080-exec-4] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
-2025-01-14T19:06:10.842-03:00  INFO 3892 --- [http-nio-8080-exec-3] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:04.156-03:00  INFO 3892 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:09.024-03:00  INFO 3892 --- [http-nio-8080-exec-7] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:10.077-03:00  INFO 3892 --- [http-nio-8080-exec-8] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:10.830-03:00  INFO 3892 --- [http-nio-8080-exec-10] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:10.990-03:00  INFO 3892 --- [http-nio-8080-exec-1] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:11.154-03:00  INFO 3892 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:11.308-03:00  INFO 3892 --- [http-nio-8080-exec-4] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
-2025-01-14T19:10:45.772-03:00  INFO 3892 --- [http-nio-8080-exec-5] c.m.m.services.UserService               : Validating login for email: pedro@mail.com
-2025-01-14T19:32:28.217-03:00  INFO 1576 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Starting MoonLandingHotelWebApplicationTests using Java 20.0.2 with PID 1576 (started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
-2025-01-14T19:32:28.218-03:00 DEBUG 1576 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-01-14T19:32:28.219-03:00  INFO 1576 --- [main] .m.m.MoonLandingHotelWebApplicationTests : No active profile set, falling back to 1 default profile: "default"
-2025-01-14T19:32:28.926-03:00  INFO 1576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-14T19:32:28.989-03:00  INFO 1576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
-2025-01-14T19:32:29.507-03:00  INFO 1576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-14T19:32:29.584-03:00  INFO 1576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-01-14T19:32:29.624-03:00  INFO 1576 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-14T19:32:29.923-03:00  INFO 1576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-14T19:32:29.953-03:00  INFO 1576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-14T19:32:30.272-03:00  INFO 1576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b3546a3
-2025-01-14T19:32:30.274-03:00  INFO 1576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-14T19:32:31.267-03:00  INFO 1576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-14T19:32:31.337-03:00  INFO 1576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-14T19:32:31.706-03:00  INFO 1576 --- [main] c.m.m.services.EventService              : Fetching all events
-2025-01-14T19:32:31.876-03:00  INFO 1576 --- [main] c.m.m.services.EventService              : Found 3 events
-2025-01-14T19:32:31.876-03:00  INFO 1576 --- [main] c.m.m.services.UserService               : Fetching all users
-2025-01-14T19:32:31.881-03:00  INFO 1576 --- [main] c.m.m.services.UserService               : Found 6 users
-2025-01-14T19:32:31.881-03:00  INFO 1576 --- [main] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:32:31.886-03:00  INFO 1576 --- [main] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:32:31.977-03:00  WARN 1576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-14T19:32:32.014-03:00  WARN 1576 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-01-21T17:09:06.059-03:00  INFO 3888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d7f2719, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@685e5967, org.springframework.security.web.context.SecurityContextHolderFilter@7fb8d720, org.springframework.security.web.header.HeaderWriterFilter@15096b0e, org.springframework.web.filter.CorsFilter@106387cf, org.springframework.security.web.csrf.CsrfFilter@55f54852, org.springframework.security.web.authentication.logout.LogoutFilter@77331437, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f461c9c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1df83569, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3d3c14c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6202f8bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@330d557e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@599fab92, org.springframework.security.web.access.ExceptionTranslationFilter@46cb800b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@121f97fb]
+2025-01-21T17:09:06.334-03:00  INFO 3888 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Started MoonLandingHotelWebApplicationTests in 5.09 seconds (process running for 6.106)
+2025-01-21T17:09:06.834-03:00  INFO 3888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:09:06.836-03:00  INFO 3888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-21T17:09:06.845-03:00  INFO 3888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-21T17:15:16.812-03:00  INFO 1476 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Starting MoonLandingHotelWebApplicationTests using Java 20.0.2 with PID 1476 (started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:15:16.813-03:00 DEBUG 1476 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:15:16.813-03:00  INFO 1476 --- [main] .m.m.MoonLandingHotelWebApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:15:17.517-03:00  INFO 1476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:15:17.584-03:00  INFO 1476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:15:18.099-03:00  INFO 1476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:15:18.160-03:00  INFO 1476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:15:18.196-03:00  INFO 1476 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:15:18.501-03:00  INFO 1476 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:15:18.533-03:00  INFO 1476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:15:18.852-03:00  INFO 1476 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d235635
+2025-01-21T17:15:18.854-03:00  INFO 1476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:15:19.876-03:00  INFO 1476 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:15:19.952-03:00  INFO 1476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:15:20.326-03:00  INFO 1476 --- [main] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:15:20.468-03:00  INFO 1476 --- [main] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:15:20.468-03:00  INFO 1476 --- [main] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:15:20.479-03:00  INFO 1476 --- [main] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:15:20.479-03:00  INFO 1476 --- [main] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:15:20.483-03:00  INFO 1476 --- [main] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:15:20.570-03:00  WARN 1476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T17:15:20.603-03:00  WARN 1476 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 8c6c74f0-8d74-4fe0-bcb6-7c47dca580ed
+Using generated security password: 974d2d46-0e3e-412c-bb5a-fe2160988c0a
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-01-14T19:32:32.370-03:00  INFO 1576 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@367653cc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@834b0f7, org.springframework.security.web.context.SecurityContextHolderFilter@5af8ef61, org.springframework.security.web.header.HeaderWriterFilter@7fae6f43, org.springframework.web.filter.CorsFilter@4c69b396, org.springframework.security.web.csrf.CsrfFilter@1ff52a71, org.springframework.security.web.authentication.logout.LogoutFilter@67748053, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7154a248, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7ccfed46, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49314684, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29682244, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3368cf02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d5d945d, org.springframework.security.web.access.ExceptionTranslationFilter@5be8a92c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62129f97]
-2025-01-14T19:32:32.627-03:00  INFO 1576 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Started MoonLandingHotelWebApplicationTests in 4.695 seconds (process running for 5.687)
-2025-01-14T19:32:33.182-03:00  INFO 1576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-14T19:32:33.184-03:00  INFO 1576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-14T19:32:33.191-03:00  INFO 1576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-14T19:37:47.879-03:00  INFO 13356 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 13356 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
-2025-01-14T19:37:47.880-03:00 DEBUG 13356 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-01-14T19:37:47.881-03:00  INFO 13356 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-01-14T19:37:47.917-03:00  INFO 13356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-14T19:37:47.918-03:00  INFO 13356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-14T19:37:48.445-03:00  INFO 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-14T19:37:48.502-03:00  INFO 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 6 JPA repository interfaces.
-2025-01-14T19:37:48.983-03:00  INFO 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-14T19:37:48.991-03:00  INFO 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-14T19:37:48.991-03:00  INFO 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-01-14T19:37:49.031-03:00  INFO 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-14T19:37:49.032-03:00  INFO 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1113 ms
-2025-01-14T19:37:49.148-03:00  INFO 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-14T19:37:49.196-03:00  INFO 13356 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-01-14T19:37:49.225-03:00  INFO 13356 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-14T19:37:49.422-03:00  INFO 13356 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-14T19:37:49.443-03:00  INFO 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-14T19:37:49.688-03:00  INFO 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e41c2fb
-2025-01-14T19:37:49.689-03:00  INFO 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-14T19:37:50.490-03:00  INFO 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-14T19:37:50.546-03:00  INFO 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-14T19:37:50.820-03:00  INFO 13356 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
-2025-01-14T19:37:50.934-03:00  INFO 13356 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
-2025-01-14T19:37:50.934-03:00  INFO 13356 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
-2025-01-14T19:37:50.939-03:00  INFO 13356 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
-2025-01-14T19:37:50.939-03:00  INFO 13356 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:37:50.944-03:00  INFO 13356 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:37:51.028-03:00  WARN 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-14T19:37:51.054-03:00  WARN 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-01-21T17:15:20.940-03:00  INFO 1476 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d5d945d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60c33609, org.springframework.security.web.context.SecurityContextHolderFilter@2e76ade9, org.springframework.security.web.header.HeaderWriterFilter@5620470a, org.springframework.web.filter.CorsFilter@6137dc84, org.springframework.security.web.csrf.CsrfFilter@19a544cd, org.springframework.security.web.authentication.logout.LogoutFilter@6202f8bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27d4513e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@b97f195, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22f1a340, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12a8d03b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67cd1db3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32f243f, org.springframework.security.web.access.ExceptionTranslationFilter@4bca2a09, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f4b2d13]
+2025-01-21T17:15:21.205-03:00  INFO 1476 --- [main] .m.m.MoonLandingHotelWebApplicationTests : Started MoonLandingHotelWebApplicationTests in 4.694 seconds (process running for 5.68)
+2025-01-21T17:15:21.701-03:00  INFO 1476 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:15:21.704-03:00  INFO 1476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-21T17:15:21.712-03:00  INFO 1476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-21T17:46:39.320-03:00  INFO 9528 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 9528 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:46:39.321-03:00 DEBUG 9528 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:46:39.322-03:00  INFO 9528 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:46:39.356-03:00  INFO 9528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:46:39.356-03:00  INFO 9528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:46:39.883-03:00  INFO 9528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:46:39.940-03:00  INFO 9528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:46:40.435-03:00  INFO 9528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:46:40.444-03:00  INFO 9528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:46:40.444-03:00  INFO 9528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:46:40.484-03:00  INFO 9528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:46:40.485-03:00  INFO 9528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1127 ms
+2025-01-21T17:46:40.600-03:00  INFO 9528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:46:40.646-03:00  INFO 9528 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:46:40.675-03:00  INFO 9528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:46:40.873-03:00  INFO 9528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:46:40.894-03:00  INFO 9528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:46:41.142-03:00  INFO 9528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29b1df5
+2025-01-21T17:46:41.144-03:00  INFO 9528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:46:41.934-03:00  INFO 9528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:46:41.989-03:00  INFO 9528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:46:42.244-03:00  INFO 9528 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:46:42.352-03:00  INFO 9528 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:46:42.353-03:00  INFO 9528 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:46:42.356-03:00  INFO 9528 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:46:42.356-03:00  INFO 9528 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:46:42.361-03:00  INFO 9528 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:46:42.439-03:00  WARN 9528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T17:46:42.463-03:00  WARN 9528 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 450e0ec0-4b8f-474d-90cb-aea3cbd257ff
+Using generated security password: 3c7aa635-d15d-49df-b0c4-154dd73d0c21
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-01-14T19:37:51.290-03:00  INFO 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a923ece, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f716b23, org.springframework.security.web.context.SecurityContextHolderFilter@2f760b8a, org.springframework.security.web.header.HeaderWriterFilter@2e30748b, org.springframework.web.filter.CorsFilter@75984ee3, org.springframework.security.web.csrf.CsrfFilter@3eccd209, org.springframework.security.web.authentication.logout.LogoutFilter@f9ab761, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2205bf19, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4349ba7e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@144ad6af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ed96569, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7290f26e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f15fea6, org.springframework.security.web.access.ExceptionTranslationFilter@6e3eb708, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d08e8e2]
-2025-01-14T19:37:51.434-03:00  INFO 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-14T19:37:51.456-03:00  INFO 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-01-14T19:37:51.463-03:00  INFO 13356 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.922 seconds (process running for 4.261)
-2025-01-14T19:38:01.055-03:00  INFO 13356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-14T19:38:01.056-03:00  INFO 13356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-14T19:38:01.057-03:00  INFO 13356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-14T19:38:01.067-03:00  WARN 13356 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-14T19:38:01.088-03:00  WARN 13356 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-01-14T19:38:08.033-03:00  INFO 13356 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:38:08.037-03:00  INFO 13356 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:38:08.066-03:00  INFO 13356 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:38:08.070-03:00  INFO 13356 --- [http-nio-8080-exec-10] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:38:08.988-03:00  INFO 13356 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:38:08.993-03:00  INFO 13356 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:38:08.997-03:00  INFO 13356 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Fetching all rooms
-2025-01-14T19:38:09.002-03:00  INFO 13356 --- [http-nio-8080-exec-8] c.m.m.services.RoomService               : Found 10 rooms
-2025-01-14T19:38:09.869-03:00  INFO 13356 --- [http-nio-8080-exec-9] c.m.m.services.RoomService               : Fetching room with ID: 2
-2025-01-14T19:38:09.872-03:00  INFO 13356 --- [http-nio-8080-exec-9] c.m.m.services.RoomService               : Found room: Suite
-2025-01-14T19:38:09.878-03:00  INFO 13356 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching room with ID: 2
-2025-01-14T19:38:09.881-03:00  INFO 13356 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found room: Suite
+2025-01-21T17:46:42.677-03:00  INFO 9528 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66d95829, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dfddbdd, org.springframework.security.web.context.SecurityContextHolderFilter@1534fa3, org.springframework.security.web.header.HeaderWriterFilter@1e9b4c02, org.springframework.web.filter.CorsFilter@6cb14a34, org.springframework.security.web.csrf.CsrfFilter@186d19a1, org.springframework.security.web.authentication.logout.LogoutFilter@658a098a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ae4d946, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@acd14b4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57f65425, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@715eb4ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c24aa3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b4256e2, org.springframework.security.web.access.ExceptionTranslationFilter@4e1807f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ca87987]
+2025-01-21T17:46:42.821-03:00  INFO 9528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-21T17:46:42.849-03:00  INFO 9528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-01-21T17:46:42.854-03:00  INFO 9528 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.886 seconds (process running for 4.226)
+2025-01-21T17:47:06.585-03:00  INFO 9528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-21T17:47:06.586-03:00  INFO 9528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-21T17:47:06.587-03:00  INFO 9528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-21T17:47:06.597-03:00  WARN 9528 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T17:47:06.620-03:00  WARN 9528 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T17:47:08.869-03:00  INFO 9528 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:47:08.873-03:00  INFO 9528 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:47:08.902-03:00  INFO 9528 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:47:08.907-03:00  INFO 9528 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:47:09.840-03:00  INFO 9528 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching room with ID: 3
+2025-01-21T17:47:09.844-03:00  INFO 9528 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found room: Deluxe Suit
+2025-01-21T17:47:09.849-03:00  INFO 9528 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching room with ID: 3
+2025-01-21T17:47:09.852-03:00  INFO 9528 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found room: Deluxe Suit
+2025-01-21T17:47:23.815-03:00  INFO 9528 --- [http-nio-8080-exec-8] c.m.m.services.UserService               : Validating login for email: pedro@mail.com
+2025-01-21T17:47:28.711-03:00  INFO 9528 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:47:28.715-03:00  INFO 9528 --- [http-nio-8080-exec-9] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:47:28.719-03:00  INFO 9528 --- [http-nio-8080-exec-10] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:47:28.722-03:00  INFO 9528 --- [http-nio-8080-exec-10] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:47:29.779-03:00  INFO 9528 --- [http-nio-8080-exec-1] c.m.m.services.EventService              : Fetching event with ID: 1
+2025-01-21T17:47:29.783-03:00  INFO 9528 --- [http-nio-8080-exec-1] c.m.m.services.EventService              : Found event: Ted Talk
+2025-01-21T17:47:29.787-03:00  INFO 9528 --- [http-nio-8080-exec-2] c.m.m.services.EventService              : Fetching event with ID: 1
+2025-01-21T17:47:29.790-03:00  INFO 9528 --- [http-nio-8080-exec-2] c.m.m.services.EventService              : Found event: Ted Talk
+2025-01-21T17:47:32.568-03:00  INFO 9528 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:47:32.572-03:00  INFO 9528 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:47:32.575-03:00  INFO 9528 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:47:32.580-03:00  INFO 9528 --- [http-nio-8080-exec-4] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:47:33.350-03:00  INFO 9528 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Fetching room with ID: 3
+2025-01-21T17:47:33.353-03:00  INFO 9528 --- [http-nio-8080-exec-5] c.m.m.services.RoomService               : Found room: Deluxe Suit
+2025-01-21T17:47:33.356-03:00  INFO 9528 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Fetching room with ID: 3
+2025-01-21T17:47:33.359-03:00  INFO 9528 --- [http-nio-8080-exec-6] c.m.m.services.RoomService               : Found room: Deluxe Suit
+2025-01-21T17:50:11.841-03:00  INFO 10504 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 10504 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:50:11.842-03:00 DEBUG 10504 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:50:11.842-03:00  INFO 10504 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:50:11.879-03:00  INFO 10504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:50:11.879-03:00  INFO 10504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:50:12.419-03:00  INFO 10504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:50:12.477-03:00  INFO 10504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:50:12.954-03:00  INFO 10504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:50:12.962-03:00  INFO 10504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:50:12.962-03:00  INFO 10504 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:50:13.002-03:00  INFO 10504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:50:13.004-03:00  INFO 10504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1123 ms
+2025-01-21T17:50:13.121-03:00  INFO 10504 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:50:13.168-03:00  INFO 10504 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:50:13.197-03:00  INFO 10504 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:50:13.394-03:00  INFO 10504 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:50:13.415-03:00  INFO 10504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:50:13.656-03:00  INFO 10504 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d06c7ba
+2025-01-21T17:50:13.657-03:00  INFO 10504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:50:14.477-03:00  INFO 10504 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:50:14.534-03:00  INFO 10504 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:50:14.800-03:00  INFO 10504 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:50:14.911-03:00  INFO 10504 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:50:14.911-03:00  INFO 10504 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:50:14.915-03:00  INFO 10504 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:50:14.915-03:00  INFO 10504 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:50:14.920-03:00  INFO 10504 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:50:14.974-03:00  WARN 10504 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes\com\moonlandinghotel\moon_landing_hotelweb\security\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-21T17:50:14.974-03:00  INFO 10504 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:50:14.976-03:00  INFO 10504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-21T17:50:14.981-03:00  INFO 10504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-21T17:50:14.983-03:00  INFO 10504 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-21T17:50:14.993-03:00  INFO 10504 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-21T17:50:15.012-03:00 ERROR 10504 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.moonlandinghotel.moon_landing_hotelweb.security.config.SecurityConfig required a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' in your configuration.
+
+2025-01-21T17:52:15.339-03:00  INFO 4328 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 4328 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:52:15.340-03:00 DEBUG 4328 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:52:15.341-03:00  INFO 4328 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:52:15.376-03:00  INFO 4328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:52:15.376-03:00  INFO 4328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:52:15.903-03:00  INFO 4328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:52:15.960-03:00  INFO 4328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:52:16.433-03:00  INFO 4328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:52:16.440-03:00  INFO 4328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:52:16.441-03:00  INFO 4328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:52:16.480-03:00  INFO 4328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:52:16.481-03:00  INFO 4328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1103 ms
+2025-01-21T17:52:16.598-03:00  INFO 4328 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:52:16.645-03:00  INFO 4328 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:52:16.674-03:00  INFO 4328 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:52:16.870-03:00  INFO 4328 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:52:16.891-03:00  INFO 4328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:52:17.135-03:00  INFO 4328 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@691b08e9
+2025-01-21T17:52:17.136-03:00  INFO 4328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:52:17.921-03:00  INFO 4328 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:52:17.978-03:00  INFO 4328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:52:18.232-03:00  INFO 4328 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:52:18.337-03:00  INFO 4328 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:52:18.338-03:00  INFO 4328 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:52:18.341-03:00  INFO 4328 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:52:18.341-03:00  INFO 4328 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:52:18.345-03:00  INFO 4328 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:52:18.401-03:00  WARN 4328 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes\com\moonlandinghotel\moon_landing_hotelweb\security\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-21T17:52:18.402-03:00  INFO 4328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:52:18.404-03:00  INFO 4328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-21T17:52:18.409-03:00  INFO 4328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-21T17:52:18.411-03:00  INFO 4328 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-21T17:52:18.421-03:00  INFO 4328 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-21T17:52:18.441-03:00 ERROR 4328 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.moonlandinghotel.moon_landing_hotelweb.security.config.SecurityConfig required a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' in your configuration.
+
+2025-01-21T17:54:14.631-03:00  INFO 11276 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 11276 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:54:14.632-03:00 DEBUG 11276 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:54:14.632-03:00  INFO 11276 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:54:14.672-03:00  INFO 11276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:54:14.672-03:00  INFO 11276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:54:15.199-03:00  INFO 11276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:54:15.256-03:00  INFO 11276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:54:15.730-03:00  INFO 11276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:54:15.737-03:00  INFO 11276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:54:15.737-03:00  INFO 11276 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:54:15.778-03:00  INFO 11276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:54:15.780-03:00  INFO 11276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2025-01-21T17:54:15.895-03:00  INFO 11276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:54:15.943-03:00  INFO 11276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:54:15.975-03:00  INFO 11276 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:54:16.166-03:00  INFO 11276 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:54:16.188-03:00  INFO 11276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:54:16.432-03:00  INFO 11276 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c11f388
+2025-01-21T17:54:16.433-03:00  INFO 11276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:54:17.216-03:00  INFO 11276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:54:17.269-03:00  INFO 11276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:54:17.525-03:00  INFO 11276 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:54:17.634-03:00  INFO 11276 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:54:17.634-03:00  INFO 11276 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:54:17.637-03:00  INFO 11276 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:54:17.638-03:00  INFO 11276 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:54:17.642-03:00  INFO 11276 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:54:17.697-03:00  WARN 11276 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes\com\moonlandinghotel\moon_landing_hotelweb\security\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-21T17:54:17.698-03:00  INFO 11276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:54:17.700-03:00  INFO 11276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-21T17:54:17.705-03:00  INFO 11276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-21T17:54:17.706-03:00  INFO 11276 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-21T17:54:17.716-03:00  INFO 11276 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-21T17:54:17.735-03:00 ERROR 11276 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.moonlandinghotel.moon_landing_hotelweb.security.config.SecurityConfig required a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' in your configuration.
+
+2025-01-21T17:54:59.702-03:00  INFO 20256 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 20256 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:54:59.704-03:00 DEBUG 20256 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:54:59.704-03:00  INFO 20256 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:54:59.738-03:00  INFO 20256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:54:59.739-03:00  INFO 20256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:55:00.263-03:00  INFO 20256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:55:00.324-03:00  INFO 20256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:55:00.794-03:00  INFO 20256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:55:00.803-03:00  INFO 20256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:55:00.803-03:00  INFO 20256 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:55:00.843-03:00  INFO 20256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:55:00.844-03:00  INFO 20256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1104 ms
+2025-01-21T17:55:00.851-03:00 ERROR 20256 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig' defined in file [C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes\com\moonlandinghotel\moon_landing_hotelweb\security\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2025-01-21T17:55:00.869-03:00  INFO 20256 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-21T17:55:00.878-03:00  WARN 20256 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-01-21T17:55:00.885-03:00  INFO 20256 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-21T17:55:00.901-03:00 ERROR 20256 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.moonlandinghotel.moon_landing_hotelweb.MoonLandingHotelWebApplication.main(MoonLandingHotelWebApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:501) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.0.jar:3.2.0]
+	... 11 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes\com\moonlandinghotel\moon_landing_hotelweb\security\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:802) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:241) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1166) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.2.0.jar:3.2.0]
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.beforeSingletonCreation(DefaultSingletonBeanRegistry.java:355) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:227) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 66 common frames omitted
+
+2025-01-21T17:55:30.875-03:00  INFO 1940 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 1940 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:55:30.876-03:00 DEBUG 1940 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:55:30.876-03:00  INFO 1940 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:55:30.912-03:00  INFO 1940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:55:30.912-03:00  INFO 1940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:55:31.435-03:00  INFO 1940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:55:31.494-03:00  INFO 1940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:55:31.975-03:00  INFO 1940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:55:31.983-03:00  INFO 1940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:55:31.983-03:00  INFO 1940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:55:32.022-03:00  INFO 1940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:55:32.024-03:00  INFO 1940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1109 ms
+2025-01-21T17:55:32.137-03:00  INFO 1940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:55:32.184-03:00  INFO 1940 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:55:32.213-03:00  INFO 1940 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:55:32.407-03:00  INFO 1940 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:55:32.427-03:00  INFO 1940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:55:32.667-03:00  INFO 1940 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29b1df5
+2025-01-21T17:55:32.669-03:00  INFO 1940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:55:33.441-03:00  INFO 1940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:55:33.497-03:00  INFO 1940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:55:33.750-03:00  INFO 1940 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:55:33.854-03:00  INFO 1940 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:55:33.855-03:00  INFO 1940 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:55:33.861-03:00  INFO 1940 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:55:33.861-03:00  INFO 1940 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:55:33.865-03:00  INFO 1940 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:55:33.942-03:00  WARN 1940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T17:55:33.964-03:00  WARN 1940 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2939a9e8-317b-4172-a79c-caba2334f02e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-21T17:55:34.178-03:00  INFO 1940 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22032fe8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66d95829, org.springframework.security.web.context.SecurityContextHolderFilter@9bffaae, org.springframework.security.web.header.HeaderWriterFilter@146380ea, org.springframework.web.filter.CorsFilter@6dfddbdd, org.springframework.security.web.csrf.CsrfFilter@4bdbcf54, org.springframework.security.web.authentication.logout.LogoutFilter@49e2d6ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5820723f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2f0230b0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6cb14a34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@456cf8d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@715eb4ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57f65425, org.springframework.security.web.access.ExceptionTranslationFilter@47dbd9fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@da436c8]
+2025-01-21T17:55:34.320-03:00  INFO 1940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-21T17:55:34.343-03:00  INFO 1940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-01-21T17:55:34.349-03:00  INFO 1940 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.815 seconds (process running for 4.153)
+2025-01-21T17:56:11.336-03:00  INFO 1940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-21T17:56:11.336-03:00  INFO 1940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-21T17:56:11.337-03:00  INFO 1940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-21T17:56:11.348-03:00  WARN 1940 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T17:56:11.371-03:00  WARN 1940 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T17:56:27.012-03:00  INFO 1940 --- [http-nio-8080-exec-3] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-21T17:57:59.055-03:00  INFO 12652 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 12652 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:57:59.056-03:00 DEBUG 12652 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:57:59.057-03:00  INFO 12652 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:57:59.094-03:00  INFO 12652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:57:59.094-03:00  INFO 12652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:57:59.624-03:00  INFO 12652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:57:59.684-03:00  INFO 12652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:58:00.169-03:00  INFO 12652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:58:00.176-03:00  INFO 12652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:58:00.176-03:00  INFO 12652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:58:00.216-03:00  INFO 12652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:58:00.216-03:00  INFO 12652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1121 ms
+2025-01-21T17:58:00.332-03:00  INFO 12652 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:58:00.378-03:00  INFO 12652 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:58:00.407-03:00  INFO 12652 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:58:00.603-03:00  INFO 12652 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:58:00.623-03:00  INFO 12652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:58:00.862-03:00  INFO 12652 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f5ffb88
+2025-01-21T17:58:00.864-03:00  INFO 12652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:58:01.655-03:00  INFO 12652 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:58:01.712-03:00  INFO 12652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:58:01.969-03:00  INFO 12652 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:58:02.077-03:00  INFO 12652 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:58:02.077-03:00  INFO 12652 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:58:02.081-03:00  INFO 12652 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:58:02.081-03:00  INFO 12652 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:58:02.085-03:00  INFO 12652 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:58:02.136-03:00  WARN 12652 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes\com\moonlandinghotel\moon_landing_hotelweb\security\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-21T17:58:02.136-03:00  INFO 12652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:58:02.138-03:00  INFO 12652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-21T17:58:02.143-03:00  INFO 12652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-21T17:58:02.145-03:00  INFO 12652 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-21T17:58:02.155-03:00  INFO 12652 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-21T17:58:02.172-03:00 ERROR 12652 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.moonlandinghotel.moon_landing_hotelweb.security.config.SecurityConfig required a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.moonlandinghotel.moon_landing_hotelweb.security.config.JwtAuthenticationFilter' in your configuration.
+
+2025-01-21T17:59:01.708-03:00  INFO 20340 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 20340 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T17:59:01.709-03:00 DEBUG 20340 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T17:59:01.709-03:00  INFO 20340 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T17:59:01.745-03:00  INFO 20340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T17:59:01.745-03:00  INFO 20340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T17:59:02.272-03:00  INFO 20340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T17:59:02.330-03:00  INFO 20340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2025-01-21T17:59:02.815-03:00  INFO 20340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T17:59:02.823-03:00  INFO 20340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T17:59:02.823-03:00  INFO 20340 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T17:59:02.864-03:00  INFO 20340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T17:59:02.864-03:00  INFO 20340 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1118 ms
+2025-01-21T17:59:02.978-03:00  INFO 20340 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T17:59:03.024-03:00  INFO 20340 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T17:59:03.052-03:00  INFO 20340 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T17:59:03.248-03:00  INFO 20340 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T17:59:03.268-03:00  INFO 20340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T17:59:03.513-03:00  INFO 20340 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@174f0923
+2025-01-21T17:59:03.515-03:00  INFO 20340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T17:59:04.299-03:00  INFO 20340 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T17:59:04.353-03:00  INFO 20340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T17:59:04.606-03:00  INFO 20340 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T17:59:04.713-03:00  INFO 20340 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T17:59:04.714-03:00  INFO 20340 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:59:04.718-03:00  INFO 20340 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:59:04.719-03:00  INFO 20340 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T17:59:04.722-03:00  INFO 20340 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T17:59:04.799-03:00  WARN 20340 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T17:59:04.822-03:00  WARN 20340 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1c35f2b0-17fe-42d0-b03f-c2f38d412109
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-21T17:59:05.034-03:00  INFO 20340 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6371eb90, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76678002, org.springframework.security.web.context.SecurityContextHolderFilter@2ab11204, org.springframework.security.web.header.HeaderWriterFilter@515552f9, org.springframework.web.filter.CorsFilter@65013c2f, org.springframework.security.web.csrf.CsrfFilter@2f0230b0, org.springframework.security.web.authentication.logout.LogoutFilter@45b68e67, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@317fef25, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14ab6587, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e5ca602, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22f8a5e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78228c19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@129def32, org.springframework.security.web.access.ExceptionTranslationFilter@658a098a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4452c087]
+2025-01-21T17:59:05.177-03:00  INFO 20340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-21T17:59:05.199-03:00  INFO 20340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-01-21T17:59:05.205-03:00  INFO 20340 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.852 seconds (process running for 4.196)
+2025-01-21T17:59:42.657-03:00  INFO 20340 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-21T17:59:42.657-03:00  INFO 20340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-21T17:59:42.658-03:00  INFO 20340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-21T17:59:42.668-03:00  WARN 20340 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/rooms' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T17:59:42.689-03:00  WARN 20340 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/rooms' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T17:59:42.706-03:00  INFO 20340 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:59:42.711-03:00  INFO 20340 --- [http-nio-8080-exec-1] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:59:42.758-03:00  INFO 20340 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T17:59:42.762-03:00  INFO 20340 --- [http-nio-8080-exec-3] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T17:59:54.538-03:00  INFO 20340 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
+2025-01-21T18:00:18.479-03:00  INFO 20340 --- [http-nio-8080-exec-8] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-21T18:01:59.472-03:00  INFO 20340 --- [http-nio-8080-exec-5] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
+2025-01-21T18:13:20.401-03:00  INFO 4048 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 4048 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T18:13:20.403-03:00 DEBUG 4048 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T18:13:20.403-03:00  INFO 4048 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T18:13:20.441-03:00  INFO 4048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T18:13:20.442-03:00  INFO 4048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T18:13:20.958-03:00  INFO 4048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T18:13:21.016-03:00  INFO 4048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2025-01-21T18:13:21.492-03:00  INFO 4048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T18:13:21.499-03:00  INFO 4048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T18:13:21.499-03:00  INFO 4048 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T18:13:21.538-03:00  INFO 4048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T18:13:21.540-03:00  INFO 4048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1096 ms
+2025-01-21T18:13:21.654-03:00  INFO 4048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T18:13:21.701-03:00  INFO 4048 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T18:13:21.730-03:00  INFO 4048 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T18:13:21.923-03:00  INFO 4048 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T18:13:21.943-03:00  INFO 4048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T18:13:22.180-03:00  INFO 4048 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29b1df5
+2025-01-21T18:13:22.181-03:00  INFO 4048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T18:13:22.960-03:00  INFO 4048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T18:13:23.015-03:00  INFO 4048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T18:13:23.270-03:00  INFO 4048 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T18:13:23.375-03:00  INFO 4048 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T18:13:23.375-03:00  INFO 4048 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T18:13:23.380-03:00  INFO 4048 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T18:13:23.380-03:00  INFO 4048 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T18:13:23.383-03:00  INFO 4048 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T18:13:23.460-03:00  WARN 4048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T18:13:23.482-03:00  WARN 4048 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e0620ae7-15b9-463d-b1d8-1b76df02a588
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-21T18:13:23.695-03:00  INFO 4048 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22032fe8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66d95829, org.springframework.security.web.context.SecurityContextHolderFilter@9bffaae, org.springframework.security.web.header.HeaderWriterFilter@146380ea, org.springframework.web.filter.CorsFilter@6dfddbdd, org.springframework.security.web.csrf.CsrfFilter@4bdbcf54, org.springframework.security.web.authentication.logout.LogoutFilter@49e2d6ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5820723f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2f0230b0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6cb14a34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@456cf8d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@715eb4ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57f65425, org.springframework.security.web.access.ExceptionTranslationFilter@47dbd9fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@da436c8]
+2025-01-21T18:13:23.837-03:00  INFO 4048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-21T18:13:23.859-03:00  INFO 4048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-01-21T18:13:23.865-03:00  INFO 4048 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.806 seconds (process running for 4.143)
+2025-01-21T18:13:38.486-03:00  INFO 4048 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-21T18:13:38.486-03:00  INFO 4048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-21T18:13:38.487-03:00  INFO 4048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-21T18:13:38.498-03:00  WARN 4048 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T18:13:38.519-03:00  WARN 4048 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/reservations/user/1' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T18:13:52.558-03:00  INFO 4048 --- [http-nio-8080-exec-3] c.m.m.services.UserService               : Validating login for email: pedro@mail.com
+2025-01-21T18:15:35.376-03:00  INFO 14832 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Starting MoonLandingHotelWebApplication using Java 20.0.2 with PID 14832 (C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web\target\classes started by Igna in C:\Users\Igna\Desktop\Stuff\Programacion\Lenguajes\Java\Proyectos-java\moon_landing_hotel-web)
+2025-01-21T18:15:35.377-03:00 DEBUG 14832 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-21T18:15:35.377-03:00  INFO 14832 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-21T18:15:35.414-03:00  INFO 14832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21T18:15:35.414-03:00  INFO 14832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21T18:15:35.958-03:00  INFO 14832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21T18:15:36.018-03:00  INFO 14832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 6 JPA repository interfaces.
+2025-01-21T18:15:36.519-03:00  INFO 14832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-21T18:15:36.526-03:00  INFO 14832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-21T18:15:36.527-03:00  INFO 14832 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-21T18:15:36.568-03:00  INFO 14832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-21T18:15:36.569-03:00  INFO 14832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1154 ms
+2025-01-21T18:15:36.685-03:00  INFO 14832 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21T18:15:36.732-03:00  INFO 14832 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-21T18:15:36.762-03:00  INFO 14832 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-21T18:15:36.957-03:00  INFO 14832 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21T18:15:36.978-03:00  INFO 14832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-21T18:15:37.218-03:00  INFO 14832 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@580c6273
+2025-01-21T18:15:37.220-03:00  INFO 14832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-21T18:15:38.013-03:00  INFO 14832 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21T18:15:38.066-03:00  INFO 14832 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21T18:15:38.326-03:00  INFO 14832 --- [restartedMain] c.m.m.services.EventService              : Fetching all events
+2025-01-21T18:15:38.434-03:00  INFO 14832 --- [restartedMain] c.m.m.services.EventService              : Found 3 events
+2025-01-21T18:15:38.435-03:00  INFO 14832 --- [restartedMain] c.m.m.services.UserService               : Fetching all users
+2025-01-21T18:15:38.439-03:00  INFO 14832 --- [restartedMain] c.m.m.services.UserService               : Found 6 users
+2025-01-21T18:15:38.439-03:00  INFO 14832 --- [restartedMain] c.m.m.services.RoomService               : Fetching all rooms
+2025-01-21T18:15:38.442-03:00  INFO 14832 --- [restartedMain] c.m.m.services.RoomService               : Found 10 rooms
+2025-01-21T18:15:38.521-03:00  WARN 14832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-21T18:15:38.544-03:00  WARN 14832 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a47202c7-feae-4745-a4ab-233470d1c2fd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-21T18:15:38.759-03:00  INFO 14832 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52e93679, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7470320f, org.springframework.security.web.context.SecurityContextHolderFilter@5b0e60d6, org.springframework.security.web.header.HeaderWriterFilter@6b9efda5, org.springframework.web.filter.CorsFilter@26dfb90d, org.springframework.security.web.csrf.CsrfFilter@74e35636, org.springframework.security.web.authentication.logout.LogoutFilter@3757ee68, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ce9f9f6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2feeb3eb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c04cbdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3146b58b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64cc3b19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57c566da, org.springframework.security.web.access.ExceptionTranslationFilter@acc33cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3331269b]
+2025-01-21T18:15:38.906-03:00  INFO 14832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-21T18:15:38.929-03:00  INFO 14832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-01-21T18:15:38.936-03:00  INFO 14832 --- [restartedMain] c.m.m.MoonLandingHotelWebApplication     : Started MoonLandingHotelWebApplication in 3.928 seconds (process running for 4.278)
+2025-01-21T18:15:56.298-03:00  INFO 14832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-21T18:15:56.298-03:00  INFO 14832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-21T18:15:56.299-03:00  INFO 14832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-01-21T18:15:56.309-03:00  WARN 14832 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/users/login' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T18:15:56.327-03:00  WARN 14832 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/users/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-01-21T18:15:56.398-03:00  INFO 14832 --- [http-nio-8080-exec-1] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-21T18:17:08.122-03:00  INFO 14832 --- [http-nio-8080-exec-8] c.m.m.services.UserService               : Validating login for email: pedro@mail.com
+2025-01-21T18:20:36.972-03:00  INFO 14832 --- [http-nio-8080-exec-7] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-21T18:23:00.634-03:00  INFO 14832 --- [http-nio-8080-exec-9] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
+2025-01-21T18:25:21.331-03:00  INFO 14832 --- [http-nio-8080-exec-2] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
+2025-01-21T18:26:43.287-03:00  INFO 14832 --- [http-nio-8080-exec-4] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-21T18:29:56.763-03:00  INFO 14832 --- [http-nio-8080-exec-3] c.m.m.services.UserService               : Validating login for email: bustamante@mail.com
+2025-01-21T18:31:10.307-03:00  INFO 14832 --- [http-nio-8080-exec-7] c.m.m.services.UserService               : Validating login for email: carlo@mail.com
