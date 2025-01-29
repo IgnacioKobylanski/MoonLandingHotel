@@ -19,7 +19,7 @@ public class UserController {
     private UserService userService;
 
     @Autowired
-    private JwtUtil jwtUtil;  // Inyectamos JwtUtil para generar el token
+    private JwtUtil jwtUtil;  // genera el token
 
     // POST /api/users/login - Validar credenciales de usuario y devolver el JWT
     @PostMapping("/login")
