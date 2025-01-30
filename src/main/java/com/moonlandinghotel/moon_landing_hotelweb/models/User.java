@@ -26,6 +26,7 @@ public class User {
 
     private boolean admin;
 
+    //testear si necesito este constructor
     public User(String email, String password, String name, String lastname, boolean admin) {
         this.email = email;
         this.password = password;
